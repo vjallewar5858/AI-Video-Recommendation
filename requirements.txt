@@ -1,0 +1,12 @@
+# requirements.txt - Python Dependencies
+# Install all with: pip install -r requirements.txt
+
+flask==3.0.3           # Web framework (replaces Express.js)
+flask-cors==4.0.1      # Cross-Origin Resource Sharing (replaces cors npm package)
+pymongo==4.7.2         # MongoDB driver (replaces mongoose)
+python-dotenv==1.0.1   # Load .env files (replaces dotenv npm package)
+assemblyai==0.26.0     # NLP transcription + content safety API
+ultralytics==8.2.0     # YOLOv8 object detection
+yt-dlp==2024.5.27      # YouTube video/audio downloader
+opencv-python==4.9.0.80  # Video frame extraction
+gunicorn==22.0.0       # Production WSGI server (for deployment)

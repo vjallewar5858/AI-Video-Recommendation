@@ -1,0 +1,25 @@
+# .gitignore
+
+# Environment secrets — NEVER commit this
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# YOLO model weights (large files, auto-downloaded on first run)
+*.pt
+
+# Temp video/audio files
+*.mp4
+*.mp3
+
+# OS files
+.DS_Store
+Thumbs.db

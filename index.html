@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Age-Tailored AI Video Recommendations</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">🧒 Age-Tailored AI Video Recommendation</a>
+      <span class="badge badge-success ml-auto" id="aiStatus">🤖 AI Analysis Active</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="video-feed-container">
+      <h1 class="my-4 text-center text-dark">Video Recommendations for You</h1>
+
+      <!-- Age Filter -->
+      <div class="text-center mb-4">
+        <div class="btn-group" role="group">
+          <button class="btn btn-outline-primary filter-btn active" data-age="all">All Ages</button>
+          <button class="btn btn-outline-primary filter-btn" data-age="0-2 years">0–2 yrs</button>
+          <button class="btn btn-outline-primary filter-btn" data-age="2-4 years">2–4 yrs</button>
+          <button class="btn btn-outline-primary filter-btn" data-age="4-6 years">4–6 yrs</button>
+          <button class="btn btn-outline-primary filter-btn" data-age="6-8 years">6–8 yrs</button>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 video-grid" id="videoFeed">
+        <!-- Video cards injected by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
