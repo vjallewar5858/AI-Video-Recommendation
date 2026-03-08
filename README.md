@@ -1,10 +1,10 @@
-# 🧒 Age-Tailored AI Video Recommendation System
+# Age-Tailored AI Video Recommendation System
 
 An AI-powered web application that analyzes YouTube videos for child safety and age-appropriateness using **NLP (AssemblyAI)**, **Computer Vision (YOLOv8)**, and a **Python/Flask backend** with **MongoDB** storage.
 
 ---
 
-## 📁 Project Structure & How Everything Connects
+## Project Structure & How Everything Connects
 
 ```
 kids_video_recommender/
@@ -37,7 +37,7 @@ kids_video_recommender/
 
 ---
 
-## 🔗 How Components Connect (Data Flow)
+## How Components Connect (Data Flow)
 
 ```
 Browser (index.html + script.js)
@@ -67,7 +67,7 @@ app.py (Flask Server)
 
 ---
 
-## 🤖 AI Components Explained
+## AI Components Explained
 
 ### 1. AssemblyAI (NLP)
 - Downloads audio track from YouTube using `yt-dlp`
@@ -88,7 +88,7 @@ app.py (Flask Server)
 
 ---
 
-## 🚀 Setup & Run
+## Setup & Run
 
 ### 1. Clone the repo
 ```bash
@@ -127,7 +127,7 @@ Open http://localhost:5000 in your browser.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology | Purpose |
 |---|---|---|
@@ -141,7 +141,7 @@ Open http://localhost:5000 in your browser.
 
 ---
 
-## 📊 Safety Metrics
+## Safety Metrics
 
 | Metric | Description | Source |
 |---|---|---|
@@ -156,7 +156,7 @@ Open http://localhost:5000 in your browser.
 
 ---
 
-## 🔑 API Keys Required
+## API Keys Required
 
 - **AssemblyAI**: Free tier available at [assemblyai.com](https://assemblyai.com) — 5 hours free transcription/month
 - **MongoDB**: Run locally for free (no cloud account needed)
